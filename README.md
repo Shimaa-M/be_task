@@ -1,40 +1,31 @@
-# Simple Blog REST API
+# BLOG-API
 
-## Description
+### General info
+Simple blog for authenticated users to create post then edit or delete it
 
-We need to create a very simple blog REST API, which should give users ability to register and login, also make posts and only delete or edit their posts.
+### Technologies
+typescript/ nodejs/ postgres/ swagger/ deplou to heroku/ migration/ docker
 
-## Main Functionality
+### Setup
+download the folder to your local machine
+```
+git clone https://github.com/Shimoo123/blog-task.git
+npm install
+npm run start:dev
+```
+### Hosted on HEROKU
+https://hidden-garden-48948.herokuapp.com
 
-- Register endpoint
-- Login endpoint
-- Create post endpoint
-- List all posts endpoint
-- Edit only user related posts endpoint
-- Delete only user related posts endpoint
+### Endpoint to use
+#### you can use all routes of API using Swagger doc
+##### for local use
+http://localhost:3000/swagger
 
-## Requirements
+##### for production use
+https://hidden-garden-48948.herokuapp.com/swaggger
 
-- Use one of following frameworks as your server router [Express](https://expressjs.com), [Koa](https://koajs.com) or [Fastify](https://www.fastify.io)
-- Add password encryption
-- Make sure to add validation
-- Use one of the following DBs [PostgrseSQL](https://www.postgresql.org) or [MongoDB](https://www.mongodb.com)
-- Add README with installation steps
+##### To run DOCKER image
+docker-compose up
 
-## Note
 
-- User schema should contain email, password & name
-- Post schema should contain title, content
 
-## Evaluation
-
-- Functionality
-- Code readability
-- Git messages
-- Linting
-
-## Bonus
-
-- Add swagger docs
-- Deploy to any service you prefer
-- Use docker

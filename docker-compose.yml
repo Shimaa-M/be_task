@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+  app:
+    build: .
+    ports:
+      - 3000:3000
+    env_file: .env
+    depends_on:
+      - db
+  db:
+    ports:
+      - 5432:5432 
+    image: postgres:10.16
+    environment:
+      POSTGRES_HOST: db 
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: blog_db
+    volumes: 
+      - db-data:/var/lib/postgresql/data  
+volumes:
+  db-data:    
+       
+       
