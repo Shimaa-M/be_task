@@ -28,6 +28,7 @@ https://hidden-garden-48948.herokuapp.com/swaggger
 docker-compose up
 
 ##### Environmet Variables
+```
 PORT=3000
 NODE_ENV=dev
 POSTGRES_HOST=localhost
@@ -41,4 +42,4 @@ BCRYPT_PASSWORD=i-love-my-children
 SALT_ROUNDS=10
 JWT_TOKEN=i-love-programming
 JWT_COOKIE_EXPIRES_IN=90
-
+```
